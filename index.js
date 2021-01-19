@@ -119,11 +119,13 @@ gallery();
 const hamburger = document.querySelector('.hamburger');
 const close = document.querySelector('.close');
 const nav = document.getElementById('mobile-nav');
-
+let body = document.querySelector('body');
 const showItems = (e) => {
+  body.style.overflow = 'hidden';
   return (nav.style.visibility = 'unset');
 };
 const closeItems = (e) => {
+  body.style.overflow = 'scroll';
   return (nav.style.visibility = 'hidden');
 };
 hamburger.addEventListener('click', showItems);
