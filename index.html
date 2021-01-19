@@ -11,6 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Loopstudios landing page</title>
 
@@ -19,22 +20,97 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: hsl(350, 100%, 88%);
+        background: black;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsl(0, 0%, 100%);
       }
     </style>
   </head>
   <body>
-    About Careers Events Products Support Immersive experiences that deliver The
-    leader in interactive VR Founded in 2011, Loopstudios has been producing
-    world-class virtual reality projects for some of the best companies around
-    the globe. Our award-winning creations have transformed businesses through
-    digital experiences that bind to their brand. Our creations See all Deep
-    earth Night arcade Soccer team VR The grid From up above VR Pocket borealis
-    The curiosity Make it fisheye About Careers Events Products Support © 2021
-    Loopstudios. All rights reserved.
-
+    <main>
+      <header class="header">
+        <div class="top">
+          <div class="header-logo">
+            <img src="./images/logo.svg" alt="Loopstudios Logo" class="logo" />
+          </div>
+          <nav class="header-nav nav-g">
+            <div class="hamburger">
+              <img src="./images/icon-hamburger.svg" alt="hamburger" />
+            </div>
+            <ul id="mobile-nav">
+              <img src="./images/icon-close.svg" alt="Close" class="close" />
+              <li class="link underline"><a href="#">About</a></li>
+              <li class="link underline"><a href="#">Careers</a></li>
+              <li class="link underline"><a href="#">Events</a></li>
+              <li class="link underline"><a href="#">Products</a></li>
+              <li class="link underline"><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-txt">
+          <p>Immersive experiences that deliver</p>
+        </div>
+      </header>
+      <section class="info">
+        <div class="info-img">
+          <img
+            src="./images/desktop/image-interactive.jpg"
+            alt="interactive"
+            class="info-img"
+          />
+        </div>
+        <div class="info-txt">
+          <span class="span-1">The leader in interactive VR</span>
+          <span class="span-2">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </span>
+        </div>
+      </section>
+      <section class="gallery">
+        <p class="gallery-txt">our creations</p>
+        <button type="button" class="gallery-btn">See all</button>
+        <div class="gallery-photos">
+          <!-- <figure class="picture">
+            <img src="" alt="" class="picture-img" />
+            <p class="picture-txt"></p>
+          </figure> -->
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-logo">
+          <img src="./images/logo.svg" alt="Loopstudios Logo" />
+        </div>
+        <figure class="socials">
+          <div class="social underline">
+            <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+          </div>
+          <div class="social underline">
+            <img src="./images/icon-twitter.svg" alt="icon-facebook" />
+          </div>
+          <div class="social underline">
+            <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
+          </div>
+          <div class="social underline">
+            <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+          </div>
+        </figure>
+        <nav class="footer-nav">
+          <ul>
+            <li class="link underline"><a href="#">About</a></li>
+            <li class="link underline"><a href="#">Careers</a></li>
+            <li class="link underline"><a href="#">Events</a></li>
+            <li class="link underline"><a href="#">Products</a></li>
+            <li class="link underline"><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </section>
+    </main>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
@@ -44,5 +120,6 @@
         >Khal Lekan</a
       >.
     </div>
+    <script src="./index.js"></script>
   </body>
 </html>
